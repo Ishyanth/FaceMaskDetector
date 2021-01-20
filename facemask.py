@@ -20,7 +20,7 @@ import datetime
 # UNCOMMENT THE FOLLOWING CODE TO TRAIN THE CNN FROM SCRATCH
 
 # BUILDING MODEL TO CLASSIFY BETWEEN MASK AND NO MASK
-'''
+
 model=Sequential()
 model.add(Conv2D(32,(3,3),activation='relu',input_shape=(150,150,3)))
 model.add(MaxPooling2D() )
@@ -73,7 +73,7 @@ test_image
 test_image=image.img_to_array(test_image)
 test_image=np.expand_dims(test_image,axis=0)
 type(mymodel.predict_classes(test_image)[0][0])
-'''
+
 
 # IMPLEMENTING LIVE DETECTION OF FACE MASK
 
